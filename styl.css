@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 body{
-
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
@@ -10,7 +10,7 @@ body{
 }
 
 #bloc_page{
-	width: 1450px;
+	width: 100%;
 	margin: auto;
 	
 }
@@ -18,8 +18,7 @@ body{
 
 nav img{
 
-	width: 97
-	px;
+	width: 97px;
 	height: 49px;
 	margin-top: 20px;
 }
@@ -175,7 +174,7 @@ input{
 }
 .section1{
 	background-color: #F2F2F2;
-	width: 920px;
+	width: calc(65% - 40px);
 	height: 650px;
 	border-radius: 20px;
 
@@ -195,8 +194,8 @@ input{
 .section2{
 	
 	background-color: #F2F2F2;
-	width: 450px;
-	margin-right: 40px;
+	width: calc(35% - 40px);
+	margin-left: 40px;
 	height: 650px;
 	border-radius: 20px;
 
@@ -207,6 +206,10 @@ section{
 	align-items: center;
 	flex-wrap: wrap;
 	font-size: 16px;
+}
+.ligne{
+	display: flex;
+	flex-direction: row;
 }
 .titre_section1{
 	display: flex;
@@ -272,7 +275,7 @@ section .img_section1 img{
 
 section .img_section2 img{
 
-	
+	display: flex;
 	width: 200px;
 	height: 220px;
 }
@@ -549,19 +552,29 @@ footer{
 	text-decoration-line: underline;
 }
 
-@media screen and (max-width: 1200px){
-header{
-	width: 95%
+@media (max-width: 1450px) {
+	#bloc_page{
+		max-width: 95%;
+
+	}
+	section{
+		margin-top: 30px;
+
+		
+	}
+
+	.section1{
+		margin-bottom: 3px;
+
+		
+
+	}	
 }
-}
-@media screen and (max-width: 900px){
-header{
-	width: 90%;
-}
-}
-@media screen and (max-width: 500px){
-	nav{
-		display: flex;
-		flex-direction: column;
+
+
+
+@media (max-width: 1202px){
+	#bloc_page{
+		width: 95%;
 	}
 }
