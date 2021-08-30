@@ -302,8 +302,7 @@ section .img_section2 img{
 
 .img_hebergement2 .details {
 
-	display: flex;
-	justify-content: 
+	display: flex; 
 	flex-direction: column;
 	padding: 10px 0px 0 22px;
 	
