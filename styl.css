@@ -11,7 +11,7 @@ body{
 
 #bloc_page{
 	width: 100%;
-	margin: auto;
+	
 	
 }
 
@@ -83,10 +83,6 @@ header .filtres a{
 
 header p{
 	margin-bottom: 15px;
-	
-}
-
-.icon_info{
 	
 }
 
