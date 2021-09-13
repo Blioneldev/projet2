@@ -143,7 +143,8 @@ input{
 
 }
 .filtres{
-	
+	display: flex;
+	flex-wrap: wrap;
 	padding-top: 5px;
 	font-weight: bold;
 
@@ -305,6 +306,11 @@ section .img_section2 img{
 
 	
 }
+.img_section2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
 
 a{
@@ -365,11 +371,22 @@ a{
 	
 
 }
+.bloc_image{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	column-gap: 30px;
+	grid-template-areas: 
+	"image1 image2 image4 image5"
+	"image1 image3 image4 image6";
+	
+}
 
 .section3 img{
 	width: 330px;
 	object-fit: cover;
 	vertical-align: middle;
+	height: 20%;
 	
 }
 .titre_activité{
@@ -379,6 +396,7 @@ a{
 .section3 {
 	margin-top: 30px;
 	vertical-align: middle;
+
 }
 
 .section3 h3{
@@ -387,7 +405,7 @@ a{
 
 #image1{
 	width: 330px;
-	height: 640px;
+	height: 20%;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	grid-column-start: 1;
@@ -548,27 +566,42 @@ footer{
 
 @media (max-width: 1450px) {
 	#bloc_page{
-		max-width: 95%;
+		max-width: 97%;
 
 	}
-	section{
-		margin-top: 30px;
-
+	.ligne{
+		flex-direction: column-reverse;
+		max-width: 100%;
+	}
+	.section2{
+		width: 100%;
+		height: 300px;
+		
 		
 	}
+	.img_section2{
+		display: flex;
+		
 
+	}
 	.section1{
-		margin-bottom: 3px;
+		width: 100%;
+		margin-top: 50px;
+	}
+	.img_hebergement2{
+		display: flex;
+		flex-direction: row;
 
+
+	}
+	.details{
+	display: flex;
+		flex-direction: column;
+	}
+	.filtres{
+		flex-wrap: wrap;
+	}
+	.section3 {
 		
-
-	}	
-}
-
-
-
-@media (max-width: 1202px){
-	#bloc_page{
-		width: 95%;
 	}
 }
