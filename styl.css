@@ -405,7 +405,7 @@ a{
 
 #image1{
 	width: 330px;
-	height: 20%;
+	height: 640px;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	grid-column-start: 1;
@@ -574,7 +574,7 @@ footer{
 		max-width: 100%;
 	}
 	.section2{
-		width: 100%;
+		width: 95%;
 		height: 300px;
 		
 		
