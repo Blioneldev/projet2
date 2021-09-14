@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+html{
+	width: 100%;
+}
 
 body{
-	width: 100%;
+	min-width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
@@ -167,6 +170,13 @@ input{
 .filtres a:hover{
 	background-color:  #DEEBFF;
 }
+section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 16px;
+}
 .section1{
 	background-color: #F2F2F2;
 	width: calc(65% - 40px);
@@ -181,26 +191,6 @@ input{
 	align-items: flex-end;
 	flex-direction: row;
 
-
-
-}
-
-
-.section2{
-	
-	background-color: #F2F2F2;
-	width: calc(35% - 40px);
-	margin-left: 40px;
-	height: 650px;
-	border-radius: 20px;
-
-}
-section{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	font-size: 16px;
 }
 .ligne{
 	display: flex;
@@ -267,30 +257,45 @@ section .img_section1 img{
 	transform: scale(1.1);
 	transition: ease 0.4s;
 }
+.section2 .img_section2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.section2{
+
+	background-color: #F2F2F2;
+	width: calc(35% - 40px);
+	margin-left: 40px;
+	height: 650px;
+	border-radius: 20px;
+
+}
+
+
 
 section .img_section2 img{
 
 	display: flex;
 	width: 200px;
-	height: 220px;
-}
-.img_hebergement2 img{
-
-	display: flex;
+	height: 140px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	width: 150px;
-	height: 140px;
+
 }
+
 .img_hebergement2{
 	display: flex;
+margin-bottom: 15px;
 	background-color: white;
 	width: 400px;
 	height: 145px;
 	padding: 5px 0 0 5px;
-	margin-left: 20px;
+	
 	border-radius: 20px;
-	margin-top: 35px;
+	
 
 
 
@@ -546,10 +551,10 @@ footer{
 	text-decoration-line: underline;
 }
 
-@media (max-width: 1450px) {
+@media screen and (max-width: 1450px) {
 	#bloc_page{
 		max-width: 95%;
-
+	position: relative;
 	}
 	section{
 		margin-top: 30px;
@@ -559,16 +564,22 @@ footer{
 
 	.section1{
 		margin-bottom: 3px;
-
-		
+	
 
 	}	
-}
-
-
-
-@media (max-width: 1202px){
-	#bloc_page{
-		width: 95%;
+	.section3{
+		max-width: 95%;
 	}
 }
+@media screen and (max-width: 1405px){
+	.ligne{
+		flex-direction: row-reverse;
+	}
+	.img_section2{
+		flex-direction: row;
+		justify-content: flex-start;
+
+	}
+}
+
+
