@@ -284,11 +284,11 @@ section .img_section1 img{
 }
 .img-section2{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	
+	height: 100%;
 	
 }
 .img_hebergement2{
@@ -314,7 +314,7 @@ section .img_section1 img{
 	margin-top: 20px;
 
 }
-.titre_section2 h1{
+.titre_section2 h2{
 	margin-left: 5%;
 }
 .titre_section2 i{
@@ -325,8 +325,8 @@ a{
 	color: black;
 }
 .details h3{
-	display: flex;
-	flex-wrap: wrap;
+	
+	
 	margin: 0;
 
 	
@@ -334,7 +334,11 @@ a{
 .img3{
 	width: 150px;
 }
-
+.details{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
 .details p{
 	margin-top: 5px;
 	
@@ -644,6 +648,9 @@ footer{
 
 	}
 	.bloc_image{
+		flex-direction: column;
+	}
+	.bloc_footer{
 		flex-direction: column;
 	}
 }
