@@ -141,12 +141,14 @@ input{
 }
 #searchicon{
 	display: none;
+	border-radius: 12px;
 }
 .search{
 	display: flex;
 	align-items: center;
 	padding: 0;
 	margin: 0 0 20px 0;
+	border-left: none;
 
 
 
@@ -583,6 +585,7 @@ footer{
 		order: 1;
 		width: 100%;
 		border-bottom: 4px solid #F2F2F2;
+		margin: 0;
 		
 
 	}
@@ -591,11 +594,7 @@ footer{
 		text-align: center;
 		
 	}
-	.onglets a:hover{
-		
-		
-		
-	}
+	
 	.hebergement {
 		width: 100%;
 		text-align: center;
@@ -609,6 +608,15 @@ footer{
 	}
 	#searchicon{
 		display: block;
+		
+
+
+	}
+	button{
+		border-radius: 12px;
+		position: relative;
+		right: 10px;
+
 	}
 	.filtres a{
 		margin-top: 10px;
@@ -632,20 +640,27 @@ footer{
 		width: 100%;
 	}
 	.image1-4 {
-		width: 100%;
+		width: auto;
 		height: auto;
 		flex-direction: column;
+		padding: 0 15px 0 15px;
+
 	}
 
 	.image2-3{
-		width: 100%;
+		width: auto;
 		height: auto;
 		flex-direction: column;
+		padding: 0 15px 0 15px;
+
 	}
 	.image5-6{
-		width: 100%;
+		width: auto;
 		height: auto;
 		flex-direction: column;
+		padding: 0 15px 0 15px;
+
+
 
 	}
 	.image-marseille {
@@ -669,7 +684,8 @@ footer{
 	}
 	.img-section2{
 		flex-direction: column;
-		width: 100%;
+		width: 90%;
+		margin: 0 15px 0 15px;
 		
 	}
 	.section2{
@@ -677,19 +693,31 @@ footer{
 		width: 100%;
 	}
 	.img_hebergement2{
+		box-shadow: 0px 0px 6px 0px #0000002e;
 		
-		width: 100%;
 	}
 	.img3 img{
 		
 	}
 	.plus{
-		margin-bottom: 20px;
+		
+		padding: 13px 0 0 12px;
 	}
 	.section1{
 		background-color: white;
+		
+
+
 	}
-	
+	.img_hebergement1{
+		margin: 0 21px 20px 15px;
+		box-shadow: 0px 0px 6px 0px #0000002e;
+
+	}
+	section .img_section1 img{
+		padding: 0px 0px 0 0px;
+		width: 100%;
+	}	
 }
 @media (max-width: 1024px) {
 
