@@ -650,7 +650,7 @@ footer{
 	}
 	.image-marseille {
 		height: 200px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		margin-right: 0;
 	}
 	.image-marseille img{
@@ -670,6 +670,7 @@ footer{
 	.img-section2{
 		flex-direction: column;
 		width: 100%;
+		
 	}
 	.section2{
 		height: auto;
@@ -677,15 +678,17 @@ footer{
 	}
 	.img_hebergement2{
 		
-		width: auto;
+		width: 100%;
 	}
 	.img3 img{
-		height: 105px;
+		
 	}
 	.plus{
 		margin-bottom: 20px;
 	}
-	
+	.section1{
+		background-color: white;
+	}
 	
 }
 @media (max-width: 1024px) {
