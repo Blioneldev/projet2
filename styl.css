@@ -20,7 +20,7 @@ nav img{
 
 	width: 97px;
 	height: 49px;
-	padding: 1rem 0 0 0;
+	
 	margin-right: auto;
 }
 
@@ -35,10 +35,10 @@ nav{
 
 }
 nav .onglet a{
-	padding-right: 2rem;
+	padding: 2rem;
 }
 nav .onglets a{
-	padding: 2rem;
+	
 	
 	
 	
@@ -50,7 +50,7 @@ nav .onglets a:hover{
 nav .onglet a{
 
 	text-decoration: none;
-	padding: 3rem 2rem ;
+	
 
 
 
@@ -73,9 +73,12 @@ nav .onglet a:hover{
 	
 }
 .hebergement{
-		padding: 1.9rem 0;		
+		padding: 2rem;		
 		color: #0065FC;
 		border-top: 3px solid #0065FC;
+}
+.activite{
+	padding: 2rem;
 }
 
 h1 {
@@ -187,6 +190,19 @@ input{
 	transform: rotate(360deg);
 
 }
+.filtres a:hover{
+	background-color:  #DEEBFF;
+}
+.filters{
+	display: flex;
+	margin-right: 10px;
+	flex-wrap: wrap;
+}
+.filtres a{
+	margin-right: 10px;
+}
+
+
 .filtres a:hover{
 	background-color:  #DEEBFF;
 }
@@ -584,7 +600,7 @@ footer{
 	.onglets {
 		order: 1;
 		width: 100%;
-		border-bottom: 4px solid #F2F2F2;
+		
 		margin: 0;
 		
 
@@ -600,6 +616,11 @@ footer{
 		text-align: center;
 		border-top: none;
 		border-bottom: 4px solid #0065FC;
+	}
+	.activite{
+		text-align: center;
+		width: 100%;
+		border-bottom: 4px solid lightgrey;
 	}
 
 	#searchtext{
@@ -717,6 +738,9 @@ footer{
 	section .img_section1 img{
 		padding: 0px 0px 0 0px;
 		width: 100%;
+	}
+	.filtres h1{
+		margin-left: 15px;
 	}	
 }
 @media (max-width: 1024px) {
@@ -748,11 +772,20 @@ footer{
 	}
 
 	.filtres a{
-		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+
+	header .filtres a{
+		margin-right: 5px;
+		margin-left: 5px;
+	
+	}
+	.plus{
+		margin-bottom: 15px;
 	}
 	
 	
 	
 	
 }
-
