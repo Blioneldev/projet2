@@ -8,7 +8,10 @@ body{
 }
 
 #bloc_page{
-	width: 100%;	
+	max-width: 1720px;
+	width: 98%;
+	padding-left: 20px;
+	margin: auto;	
 }
 /*-------------------HEADER------------------*/
 
@@ -26,7 +29,7 @@ nav{
 }
 
 nav .onglet a{
-	padding: 2rem;
+	padding: 30px 50px 0 30px;
 }
 
 nav .onglet a{
@@ -35,6 +38,9 @@ nav .onglet a{
 
 nav .onglet a:hover{
 	color: #0065FC;
+}
+nav .onglets a{
+	
 }
 
 .onglets{
@@ -47,13 +53,13 @@ nav .onglet a:hover{
 }
 
 .hebergement{
-		padding: 1.8rem;		
+		padding: 26px;		
 		color: #0065FC;
 		border-top: 3px solid #0065FC;
 }
 
 .activite{
-	padding: 2rem;
+	padding: 30px;
 }
 
 h1 {
@@ -99,7 +105,7 @@ header p{
 }
 
 button{
-	padding: 12px 15px 12px 15px;
+	padding: 11px 15px 10px 15px;
 	background-color: #0065FC;
 	border: 1px #0065FC solid;
 	border-top-right-radius: 12px;
@@ -108,12 +114,17 @@ button{
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
+	position: relative;
+	right: 5px;
 }
 
 input{
 	padding: 10px 22px 10px 22px;
 	font-size: 15px;
 	font-weight: bold;
+	border: none;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
 }
 
 #searchicon{
@@ -133,7 +144,7 @@ input{
 	border: 1px #F2F2F2 solid;
 	border-bottom-left-radius: 12px;
 	border-top-left-radius: 12px;
-	padding: 12px 15px 12px 15px;
+	padding: 11px 15px 10px 15px;
 	color: black;
 	background-color: #F2F2F2;
 }
@@ -208,6 +219,7 @@ section{
 .ligne{
 	display: flex;
 	flex-direction: row;
+
 }
 
 .titre_section1{
@@ -262,7 +274,8 @@ section .img_section1 img{
 }
 
 .img_hebergement1:hover{
-	transform: scale(1.1);
+	
+	;
 	transition: ease 0.4s;
 }
 /*----------------------------SECTION-2-----------------------*/
@@ -270,7 +283,7 @@ section .img_section1 img{
 .section2{
 	background-color: #F2F2F2;
 	width: calc(35% - 40px);
-	margin-left: 40px;
+	margin-left: 58px;
 	height: 650px;
 	border-radius: 20px;
 }
@@ -372,7 +385,9 @@ a{
 
 /*------------------- SECTION 3---------------*/
 
+.section3{
 
+}
 .titre_activité{
 	margin: 15px 0 15px 15px;
 }
@@ -383,14 +398,14 @@ a{
 .bloc_image{
 	display: flex;
 	height: 100%;
-	flex-wrap: wrap;
+	
 }
 
 .image-marseille{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	margin-right: 3rem;
+	
 	box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
 	border-radius: 20px;	
 }
@@ -415,15 +430,17 @@ a{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 25%;
+	width: 23%;
+	margin-right: 2rem;
 }
 
 
 .image2-3{
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 23%;
 	justify-content: space-between;
+	margin-right: 2rem;
 }
 
 .image2{
@@ -448,8 +465,9 @@ a{
 .image5-6{
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 23%;
 	justify-content: space-between;
+	margin-right: 0;
 }
 
 .image5{
@@ -475,7 +493,7 @@ a{
 
 footer{
 	width: 100%;
-	height: 200px;
+	height: auto;
 	background-color: #F2F2F2;
 	margin-top: 60px; 
 	display: flex;
@@ -486,6 +504,8 @@ footer{
 .footer{
 	display: flex;
 	justify-content: space-between;
+	max-width: 1720px;
+	margin: auto;
 	width: 100%;
 }
 
@@ -525,6 +545,7 @@ footer{
 @media (max-width: 1440px) {
 	#bloc_page{
 		max-width: 100%;
+		padding-left: 0;
 	}
 
 	.ligne{
@@ -565,6 +586,12 @@ footer{
 }
 @media (max-width: 548px){
 
+	#bloc_page{
+		padding-left: 0;
+		margin: 0;
+		width: 100%;
+
+	}
 	.onglets {
 		order: 1;
 		width: 100%;
@@ -604,7 +631,7 @@ footer{
 
 	.filtres a{
 		margin-top: 10px;
-		margin-left: 20px;
+		margin-left: 15px;
 	}
 
 	.section1{
@@ -634,6 +661,7 @@ footer{
 		height: auto;
 		flex-direction: column;
 		padding: 0 15px 0 15px;
+		margin-right: 0;
 	}
 
 	.image2-3{
@@ -641,6 +669,7 @@ footer{
 		height: auto;
 		flex-direction: column;
 		padding: 0 15px 0 15px;
+		margin-right: 0;
 	}
 
 	.image5-6{
@@ -648,6 +677,7 @@ footer{
 		height: auto;
 		flex-direction: column;
 		padding: 0 15px 0 15px;
+
 	}
 
 	.image-marseille {
@@ -683,6 +713,7 @@ footer{
 		height: auto;
 		width: 100%;
 		border-radius: 0;
+
 	}
 
 	.img_hebergement2{
@@ -711,10 +742,19 @@ footer{
 	.filtres h1{
 		margin-left: 15px;
 	}
+	header{
+		padding: 7px;
+	}
+	nav img{
+		padding-left: 5px;
+	}
 
 }
 @media (max-width: 1024px) {
 
+	#bloc_page{
+		padding-left: 0;
+	}
 	.img-section2{
 		display: flex;
 		flex-direction: column;
@@ -727,7 +767,7 @@ footer{
 	}
 
 	.img_hebergement2{
-		width: auto;	
+		width: 98%;	
 	}
 
 	.section2{
@@ -737,10 +777,12 @@ footer{
 
 	.section1{
 		height: auto;
+		width: 100%;
 	}
 
 	.section3{
-		width: 100%;
+		width: 98%;
+		margin: auto;
 	}
 
 	.filtres a{
